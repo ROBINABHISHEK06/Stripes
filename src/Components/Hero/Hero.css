@@ -1,0 +1,168 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundZoom {
+    0% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(10, 0, 70, 0.7), rgba(11, 1, 80, 0.7)), url('../../assets/Simulator.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: backgroundZoom 10s ease-in-out infinite alternate; /* Background zoom effect */
+    padding: 0 20px; /* Ensure padding for smaller screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+    animation: fadeInUp 1.5s ease-out; /* Initial fadeInUp animation for hero text */
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out 0.5s forwards; /* Fade in and slide up */
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out 0.5s forwards; /* Fade in and slide up */
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out 1s forwards; /* Fade in and slide up for paragraph */
+}
+
+.hero-text .btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out 1.5s forwards, bounce 1s ease-out 1.5s infinite; /* Button bounce after fade in */
+    transition: transform 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    transform: scale(1.1); /* Button hover effect */
+}
+
+/* Bounce animation for button */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 20px; /* Adjust heading size for tablets */
+    }
+    .hero-text h2 {
+        font-size: 18px; /* Adjust heading size for tablets */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    .hero-text .btn {
+        padding: 10px 20px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 40px; /* Adjust heading for smaller screens */
+    }
+    .hero-text h2 {
+        font-size: 20px; /* Adjust heading size for tablets */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Smaller paragraph */
+    }
+
+    .hero-text .btn {
+        padding: 8px 16px; /* Smaller button */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 45vh; /* Reduce height on very small screens */
+    }
+
+    .hero-text h1 {
+        font-size: 30px; /* Compact heading for mobile */
+    }
+    .hero-text h2 {
+        font-size: 15px; /* Adjust heading size for tablets */
+    }
+
+    .hero-text p {
+        font-size: 12px; /* Compact paragraph */
+    }
+
+    .hero-text .btn {
+        padding: 5px 10px; /* Compact button */
+    }
+}
+/* Blue color for world and company */
+.blue-text {
+    color: #b9991c;; /* Blue color */
+  }
+  
+  /* Cursor effect for backspace */
+  .cursor {
+    animation: blink 0.8s infinite;
+  }
+  
+  /* Blinking animation */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  

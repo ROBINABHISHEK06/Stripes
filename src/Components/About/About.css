@@ -1,0 +1,98 @@
+/* Main container */
+.about {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  /* Left section (Image) */
+  .about-left {
+    flex: 1; /* Makes it flexible */
+    min-width: 300px; /* Ensures image doesn't get too small */
+    position: relative;
+  }
+  
+  /* Right section (Text) */
+  .about-right {
+    flex: 1; /* Makes it flexible */
+    min-width: 300px; /* Ensures content remains readable */
+    padding: 20px;
+  }
+  
+  /* Image styling */
+  .about-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Prevents image from getting too tall */
+    border-radius: 10px;
+  }
+  
+  /* Heading styling */
+  .about h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #212EA0;
+  }
+  
+  /* Main title */
+  .about h2 {
+    font-size: 35px;
+    color: #000F38;
+    margin: 10px 0;
+    max-width: 600px; /* Ensures heading fits well */
+  }
+  
+  /* Paragraph styling */
+  .about p {
+    color: #676767;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .about {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+    }
+  
+    .about-right {
+      padding: 10px;
+    }
+  
+    .about h2 {
+      font-size: 30px; /* Slightly smaller title for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      width: 95%; /* Adjust width for smaller screens */
+    }
+  
+    .about h2 {
+      font-size: 26px; /* Smaller heading for tablets */
+    }
+  
+    .about p {
+      font-size: 14px; /* Smaller text for better fit */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 22px; /* Smaller heading for mobile devices */
+    }
+  
+    .about p {
+      font-size: 13px; /* Smaller paragraphs for better fit */
+    }
+  
+    .about-right {
+      padding: 5px;
+    }
+  }
+  

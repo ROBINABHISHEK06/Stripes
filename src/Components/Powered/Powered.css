@@ -1,0 +1,19 @@
+/* src/components/Powered.css */
+.powered-footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0c042f;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .powered-footer {
+      font-size: 0.8rem;
+      padding: 8px 10px;
+    }
+  }
+  

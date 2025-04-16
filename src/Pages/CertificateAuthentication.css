@@ -1,0 +1,129 @@
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    /* background: linear-gradient(white, #e8eaec 100%); */
+}
+
+.certificate-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 460px;
+}
+
+.certificate-title {
+    text-align: center;
+    color: #5e3cf2;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.certificate-form-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.certificate-label {
+    font-size: 1.2rem;
+    color: #5e3cf2;
+    white-space: nowrap;
+}
+
+.certificate-input,
+.certificate-number-input,
+.certificate-dropdown {
+    padding: 0.6rem 1rem;
+    border: 2px solid #9a8df1;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.certificate-sub-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+}
+
+.certificate-dropdown {
+    max-width: 120px;
+    min-width: 90px;
+}
+
+.certificate-number-input {
+    flex: 1;
+    min-width: 100px;
+}
+
+.certificate-input:focus,
+.certificate-dropdown:focus,
+.certificate-number-input:focus {
+    border-color: #5e3cf2;
+    outline: none;
+}
+
+.certificate-verify-button {
+    background-color:rgba(14, 0, 108, 0.884);
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-verify-button:hover {
+    background-color:rgba(17, 0, 130, 0.7);
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .certificate-card {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .certificate-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-sub-group {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .certificate-dropdown,
+    .certificate-number-input {
+        width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .certificate-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .certificate-label {
+        font-size: 1rem;
+    }
+
+    .certificate-verify-button {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+}

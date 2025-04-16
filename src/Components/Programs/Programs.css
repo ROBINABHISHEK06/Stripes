@@ -1,0 +1,139 @@
+/* Container Styles */
+.programs-container {
+  width: 90%;
+  margin: 25px auto;
+}
+
+/* Programs Grid */
+.programs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Adds spacing between cards */
+  flex-wrap: wrap; /* Ensures cards wrap in smaller screens */
+}
+
+/* Program Card */
+.program-card {
+  flex-basis: 21%; /* Reduced width slightly for 4 cards */
+  height: 350px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Title and Button */
+.program-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.program-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.program-card button:hover {
+  background-color: #0056b3;
+}
+
+/* All Courses Button */
+.all-courses-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.all-courses-btn button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.all-courses-btn button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .program-card {
+    flex-basis: 95%; /* Slightly smaller for small screens */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .program-card {
+    flex-basis: 43%; /* Slightly smaller for medium screens */
+  }
+}
+
+/* Initial styles for animation */
+.program-card {
+  transform: translateX(-100%);
+  opacity: 0;
+  will-change: transform, opacity; /* Performance optimization */
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+/* Apply animation when 'animate' class is added */
+.program-card.animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Staggered animation delays */
+.program-card:nth-child(1) {
+  transition-delay: 0s;
+}
+.program-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.program-card:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.program-card:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.program-card:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.program-card:nth-child(6) {
+  transition-delay: 1s;
+}
+.program-card:nth-child(7) {
+  transition-delay: 1.2s;
+}
+.program-card:nth-child(8) {
+  transition-delay: 1.4s;
+}

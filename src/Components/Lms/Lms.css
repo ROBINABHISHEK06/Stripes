@@ -1,0 +1,124 @@
+.lmscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures content on left, image on right */
+  text-align: left;
+  max-width: 80%;
+  margin: auto;
+  padding: 50px 0;
+  gap: 50px;
+}
+
+.lmscontent {
+  flex: 1; /* Content takes 1 part of the space */
+  max-width: 50%;
+}
+
+.lmscontent h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lmscontent p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.linkb {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.linkb button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.images {
+  flex: 1; /* Image takes 1 part of the space */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.first-image {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .lmscontainer {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    text-align: center;
+  }
+
+  .images {
+    order: -1; /* Image on top */
+    justify-content: center; /* Center the image */
+  }
+
+  .lmscontent {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .lmscontent h2 {
+    font-size: 22px;
+  }
+
+  .lmscontent p {
+    font-size: 16px;
+  }
+
+  .linkb button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lmscontainer {
+    max-width: 95%;
+  }
+
+  .first-image {
+    width: 100%;
+  }
+
+  .lmscontent h2 {
+    font-size: 20px;
+  }
+
+  .lmscontent p {
+    font-size: 14px;
+  }
+
+  .linkb button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lmscontent h2 {
+    font-size: 18px;
+  }
+
+  .lmscontent p {
+    font-size: 13px;
+  }
+
+  .linkb button {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+}

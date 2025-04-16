@@ -1,0 +1,170 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e6e4e2;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Glow Text Container */
+.glow-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.glow-text {
+  display: flex;
+  gap: 5px;
+  font-size: 6vw; /* Makes text responsive */
+  font-weight: bold;
+  color: white;
+}
+
+.glow-text span {
+  display: inline-block;
+  transition: text-shadow 0.3s ease-in-out, color 0.3s;
+  cursor: pointer;
+}
+
+.glow-text span:hover,
+.glow-text span.active {
+  color: rgb(6, 53, 66);
+  text-shadow: 0 0 1px rgb(10, 68, 82), 0 0 1px rgb(10, 68, 82), 0 0 2px rgb(10, 68, 82);
+}
+
+.sarm {
+  width: 75px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align image vertically with the text */
+  margin-right: 8px;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping */
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+  margin-top: 40px; /* Moves .left slightly downward */
+}
+
+.center,
+.right {
+  flex: 1;
+  min-width: 250px;
+  margin-top: -50px; /* Adjust this value to move up */
+}
+
+
+/* Social Icons */
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Useful Links & Contact */
+.title {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo */
+.logoo {
+  width: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .list {
+    justify-content: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-text {
+    font-size: 6vw; /* Adjusts text size for smaller screens */
+  }
+
+  .social-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .list-item {
+    width: 100%;
+  }
+}
+
+/* Responsive Image for Mobile Screens */
+@media (max-width: 768px) {
+  .sarm {
+    width: 45px; /* Slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .sarm {
+    width: 30px; /* Smaller size for mobile screens */
+    margin-top: -10px;
+  }
+}

@@ -1,0 +1,436 @@
+/* Main container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: linear-gradient(to bottom, #ffffff, #004aad);
+    padding: 40px 20px;
+}
+
+/* Left Section */
+.contact-left {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-left h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+}
+
+.contact-left p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Right Section */
+.contact-right {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    top: 250px;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+    min-height: 450px;
+}
+
+.contact-form h3 {
+    color: #f97316;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit Button */
+.submitbtn {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submitbtn:hover {
+    background: #00308f;
+}
+
+/* Make Follow Us fixed on PC only */
+@media (min-width: 768px) {
+    .contact-right {
+        position: fixed;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 450px;
+    }
+}
+
+/* Responsive Design - For All Mobile Devices */
+@media (max-width: 1024px) { /* Covers tablets and smaller devices */
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px; /* Adjusted for better spacing */
+    }
+
+    .contact-right {
+        position: relative;
+        top: 50%;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px; /* Ensures separation from the content above */
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 90%;
+        max-width: 400px; /* Keeps form size consistent */
+    }
+}
+
+/* Responsive Design - For All Latest Mobile Devices */
+@media (max-width: 480px) { /* Covers most mobile screens (320px - 480px) */
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 15px; /* Adjusted padding for small screens */
+    }
+
+    .contact-right {
+        position: relative;
+        top: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 350px; /* Adjusted max width for better fit */
+        padding: 30px; /* Reduced padding for better spacing */
+    }
+
+    .contact-form h3 {
+        font-size: 18px; /* Slightly smaller for small screens */
+    }
+
+    input, textarea {
+        font-size: 14px; /* Ensures readability on all mobiles */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact-container {
+        /* flex-direction: column; */
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .contact-right {
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+}
+
+/* Contact Us Page */
+.leftind-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns left */
+    align-items: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+/* Contact Box */
+.leftind-box {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    margin-left: 100px;
+}
+
+/* Contact Title */
+.leftind-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 10px;
+}
+
+/* Subtext */
+.leftind-subtext {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.leftind-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.leftind-item:first-child {
+    border-top: none;
+}
+
+/* Icons */
+.leftind-icon {
+    font-size: 28px;
+    color: #f97316;
+}
+
+/* Title */
+.leftind-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+/* Highlighted Text */
+.leftind-highlight {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .leftind-container {
+        justify-content: center;
+        padding: 30px 10px; /* Reduce side padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    .leftind-box {
+        width: 95%; /* Make it take almost full width */
+        max-width: 400px; /* Optional: Set a max width for better readability */
+        padding: 20px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .leftind-container {
+        padding: 15px; /* Reduce padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    .leftind-box {
+        width: 100%; /* Take full width */
+        padding: 15px;
+        margin: 0 auto; /* Center align */
+        max-width: 380px; /* Optional: Set max width */
+        box-sizing: border-box; /* Ensure padding doesn't shrink width */
+    }
+
+    .leftind-box h2 {
+        font-size: 25px; /* Slightly smaller font */
+    }
+
+    .leftind-subtext {
+        font-size: 15px;
+    }
+
+    .leftind-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .leftind-icon {
+        font-size: 24px;
+    }
+
+    .leftind-highlight {
+        font-size: 16px;
+    }
+}
+
+/* Contact Us Page */
+.leftph-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns left */
+    align-items: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+/* Contact Box */
+.leftph-box {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    margin-left: 100px;
+}
+
+/* Contact Title */
+.leftph-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 10px;
+}
+
+/* Subtext */
+.leftph-subtext {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.leftph-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.leftph-item:first-child {
+    border-top: none;
+}
+
+/* Icons */
+.leftph-icon {
+    font-size: 28px;
+    color: #f97316;
+}
+
+/* Title */
+.leftph-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+/* Highlighted Text */
+.leftph-highlight {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .leftph-container {
+        justify-content: center;
+        padding: 30px 10px; /* Reduce side padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    .leftph-box {
+        width: 95%; /* Make it take almost full width */
+        max-width: 400px; /* Optional: Set a max width for better readability */
+        padding: 20px;
+        box-sizing: border-box; /* Ensure padding doesn't shrink width */
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .leftph-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .leftph-box {
+        width: 100%; /* Take full width */
+        padding: 15px;
+        margin: 0 auto; /* Center align */
+        max-width: 380px; /* Optional: Prevent it from getting too wide */
+        box-sizing: border-box; /* Ensure padding doesn't shrink width */
+    }
+
+    .leftph-box h2 {
+        font-size: 25px; /* Slightly smaller font */
+    }
+
+    .leftph-subtext {
+        font-size: 15px;
+    }
+
+    .leftph-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .leftph-icon {
+        font-size: 24px;
+    }
+
+    .leftph-highlight {
+        font-size: 16px;
+    }
+}
+
+
+
+

@@ -1,0 +1,65 @@
+/* Container Styles */
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Spacing between images */
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 23%; /* Default width for large screens */
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Hover effect for better UX */
+}
+
+/* View More Button Styles */
+.view-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .gallery img {
+    width: 45%; /* Two images per row */
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%; /* Full-width images */
+  }
+
+  .view-more-btn {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 1rem; /* Smaller text */
+  }
+}

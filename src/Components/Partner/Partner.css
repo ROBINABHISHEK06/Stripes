@@ -1,0 +1,33 @@
+/* Container Styles */
+.partner {
+  margin: 80px auto;
+  width: 100%;
+  overflow: hidden; /* Hides extra content */
+}
+
+/* Gallery Layout */
+.partnergallery {
+  display: flex;
+  width: max-content; /* Prevents wrapping */
+  align-items: center;
+  gap: 20px;
+  animation: scrollTrain 20s linear infinite;
+}
+
+/* Image Styles */
+.partnergallery img {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Continuous Scrolling Animation */
+@keyframes scrollTrain {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves half of duplicated content */
+  }
+}
