@@ -45,7 +45,7 @@ const Framo = () => {
 
           {/* ADDING MORE ITEMS BELOW */}
           <div className="info-item">
-            <strong>Offline Access</strong>
+            <strong>Offline & online</strong>
             <p>Study from institute</p>
           </div>
         </div>

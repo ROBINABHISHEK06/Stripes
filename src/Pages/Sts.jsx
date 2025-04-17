@@ -37,7 +37,7 @@ const Sts = () => {
           <div className="divider"></div>
 
           <div className="info-item">
-            <strong>5 Days</strong>
+            <strong>2 Days</strong>
             <p>at 8 hours a day</p>
           </div>
 

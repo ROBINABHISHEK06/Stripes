@@ -37,7 +37,7 @@ const Eeac = () => {
           <div className="divider"></div>
 
           <div className="info-item">
-            <strong>5 Days</strong>
+            <strong>6 Days</strong>
             <p>at 8 hours a day</p>
           </div>
 
@@ -45,7 +45,7 @@ const Eeac = () => {
 
           {/* ADDING MORE ITEMS BELOW */}
           <div className="info-item">
-            <strong>Offline Access</strong>
+            <strong>Offline & online</strong>
             <p>Study from institute</p>
           </div>
         </div>
